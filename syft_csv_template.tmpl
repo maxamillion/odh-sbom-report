@@ -1,0 +1,5 @@
+"Package","Version Installed", "Found by", "Image"
+{{ $source_name := .source.name }}"
+{{- range .artifacts}}
+"{{.name}}","{{.version}}","{{.foundBy}}","{{$source_name}}"
+{{- end}}
